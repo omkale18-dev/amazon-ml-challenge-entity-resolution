@@ -8,9 +8,12 @@ venv/
 # Large datasets & generated artifacts
 dataset/
 output/*.tsv
-output/*.zip
 output/*.log
 output/*.parquet
+
+# Keep key submission artifacts under 100MB
+!output/matching_results.tsv
+!output/*.zip
 
 # OS specific
 .DS_Store
